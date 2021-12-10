@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9877bc6c1f.js" crossorigin="anonymous"></script>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">
+                Content Survey
+            </h1>
+            <p id="description">
+                 Thank you for giving me input and feedback
+                 that will help me improve the content in the future.
+                 <p class="description-para">
+                    Fields marked with <span class="star"></span> are required.
+                 </p>
+            </p>
+        </header>
+
+        <!--FORM STARTS HERE-->
+        <form id="survey-form" class="form">
+            <div class="form__group">
+                <label for="name"
+                    id="name-label"
+                    class="form__group--label">
+                    Name
+                </label>
+                <input type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                    autofocus>
+            </div>
+
+            <div class="form__group">
+                <label for="email"
+                    id="email-label"
+                    class="form__group--label">
+                    Email
+                </label>
+                <input type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required>
+            </div>
+
+            <div class="form__group">
+                <label for="number" id="number-label"
+                class="form__group--label">
+                    Age
+                </label>
+                <input
+                    type="number"
+                    name="age"
+                    id="number"
+                    class="form-control"
+                    min="10"
+                    max="99+"
+                    placeholder="Your Age - Use the arrows">
+            </div>
+
+            <div class="form__group">
+                <p class="form__group--label">
+                    Choose your gender
+                </p>
+                <label for="female">
+                    <input type="radio" class="gender" name="gender" id="female" value="female">
+                    <span class="radio-custom"></span>
+                    Female
+                </label>
+                <label for="male">
+                    <input type="radio" class="gender" name="gender" id="male" value="male">
+                    <span class="radio-custom"></span>
+                    Male
+                </label>
+                <label for="non-binary">
+                    <input type="radio" class="gender" name="gender" id="non-binary" value="non-binary">
+                    <span class="radio-custom"></span>
+                    Non binary
+                </label>
+                <label for="not-sure">
+                    <input type="radio" class="gender" name="gender" id="not-sure" value="not-sure">
+                    <span class="radio-custom"></span>
+                    Not sure
+                </label>
+                <label for="gender-other">
+                    <input type="radio" class="gender" name="gender" id="gender-other" value="other">
+                    <span class="radio-custom"></span>
+                    Other
+                </label>
+            </div>
+
+            <div class="form__group">
+                <p class="form__group--label">
+                    Choose your occupation:
+                </p>
+                <select
+                    name="occupation"
+                    id="dropdown-1"
+                    class="form-control"
+                    required>
+                    <option disabled selected value="">
+                        Select current occupation
+                    </option>
+                    <option value="student">
+                        Student
+                    </option>
+                    <option value="job">
+                        Full time or part time Job
+                    </option>
+                    <option value="unemployed">
+                        Unemployed/looking for job
+                    </option>
+                    <option value="change-career">
+                        Changing career path
+                    </option>
+                    <option value="other">
+                        Other - Please write what below
+                    </option>
+                </select>
+                <label class="label-other">
+                    <span class="other">
+                        <p>If you chose "Other", what is your occupation?</p>
+                    </span>
+                    <input
+                    type="text"
+                    name="platform"
+                    class="platform-input other-input"
+                    placeholder="Your occupation">
+                </label>
+            </div>
+
+            <div class="form__group">
+                <p class="form__group--label">
+                    Choose your experience level in programming/web development:
+                </p>
+                <select
+                name="programming"
+                id="dropdown-2"
+                class="form-control"
+                required>
+                <option disabled selected value="">
+                    Select your experience level
+                </option>
+                <option value="novice">
+                    Novice (less than 6 months)
+                </option>
+                <option value="beginner">
+                    Beginner (more than 6 months, less than 1 year)
+                </option>
+                <option value="competent">
+                    Compentent (More than 1 year)
+                </option>
+                <option value="expert">
+                    Expert (5+ years)
+                </option>
+                <option value="not-sure">
+                    Not sure/Don't want to say
+                </option>
+                <option value="no-experience">
+                    No experience
+                </option>
+            </select>
+            </div>
+
+            <div class="form__group">
+                <p class="form__group--label">
+                    Choose your education level in programming/web development:
+                </p>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="education"
+                        class="education-input"
+                        value="university">
+                        <span class="checkbox-custom"></span>
+                        University
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="education"
+                        class="education-input"
+                        value="collage">
+                        <span class="checkbox-custom"></span>
+                        Collage
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="education"
+                        class="education-input"
+                        value="fhskola">
+                        <span class="checkbox-custom"></span>
+                        Folk High School
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="education"
+                        class="education-input"
+                        value="vocational">
+                        <span class="checkbox-custom"></span>
+                        Vocational Training
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="education"
+                        class="education-input"
+                        value="bootcamp">
+                        <span class="checkbox-custom"></span>
+                        Boot Camp
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="education"
+                        class="education-input"
+                        value="trainee">
+                        <span class="checkbox-custom"></span>
+                        Trainee
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="education"
+                        class="education-input"
+                        value="intern">
+                        <span class="checkbox-custom"></span>
+                        Internship
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="education"
+                        class="education-input"
+                        value="self-taught">
+                        <span class="checkbox-custom"></span>
+                        Self Taught
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="education"
+                        class="education-input"
+                        value="not-sure">
+                        <span class="checkbox-custom"></span>
+                        Not sure
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="education"
+                        class="education-input"
+                        value="other">
+                        <span class="checkbox-custom"></span>
+                        Other
+                </label>
+                <label class="label-other">
+                    <span class="other">
+                        <p>If you chose "Other", what is your education?</p>
+                    </span>
+                    <input
+                    type="text"
+                    name="platform"
+                    class="education-input other-input"
+                    placeholder="Your education">
+                </label>
+            </div>
+
+            <div class="form__group">
+                <p class="form__group--label">
+                    Choose platforms you use to engage with programming/web development:
+                </p>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="platform"
+                        class="platform-input"
+                        value="github">
+                        <span class="checkbox-custom"></span>
+                        Github
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="platform"
+                        class="platform-input"
+                        value="instagram">
+                        <span class="checkbox-custom"></span>
+                        Instagram
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="platform"
+                        class="platform-input"
+                        value="facebook">
+                        <span class="checkbox-custom"></span>
+                        Facebook
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="platform"
+                        class="platform-input"
+                        value="codepen">
+                        <span class="checkbox-custom"></span>
+                        Codepen
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="platform"
+                        class="platform-input"
+                        value="twitter">
+                        <span class="checkbox-custom"></span>
+                        Twitter
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="platform"
+                        class="platform-input"
+                        value="linkedin">
+                        <span class="checkbox-custom"></span>
+                        LinkedIn
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="platform"
+                        class="platform-input"
+                        value="youtube">
+                        <span class="checkbox-custom"></span>
+                        Youtube
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="platform"
+                        class="platform-input"
+                        value="dribbble">
+                        <span class="checkbox-custom"></span>
+                        Dribbble
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="platform"
+                        class="platform-input"
+                        value="behance">
+                        <span class="checkbox-custom"></span>
+                        Behance
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="platform"
+                        class="platform-input"
+                        value="stack-overflow">
+                        <span class="checkbox-custom"></span>
+                        Stack Overflow
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="platform"
+                        class="platform-input"
+                        value="awwwards">
+                        <span class="checkbox-custom"></span>
+                        Awwwards
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="platform"
+                        class="platform-input"
+                        value="i-dont-use">
+                        <span class="checkbox-custom"></span>
+                        I don't use social media
+                </label>
+                <label class="label__other-input">
+                    <input
+                        type="checkbox"
+                        name="platform"
+                        class="platform-input"
+                        value="other">
+                        <span class="checkbox-custom"></span>
+                        Other
+                </label>
+                <label class="label-other">
+                    <span class="other">
+                        <p>If you chose "Other", what platforms do you use?</p>
+                    </span>
+                    <input
+                    type="text"
+                    name="platform"
+                    class="platform-input other-input"
+                    placeholder="Your platforms">
+                </label>
+            </div>
+
+            <div class="form__group">
+                <p class="content-label form__group--label">
+                    Choose content you would like to see:
+                </p>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="content"
+                        class="content-input"
+                        value="tutorials">
+                        <span class="checkbox-custom"></span>
+                        Tutorials
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="content"
+                        class="content-input"
+                        value="recommend">
+                        <span class="checkbox-custom"></span>
+                        Tools and resources I recommend
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="content"
+                        class="content-input"
+                        value="my-story">
+                        <span class="checkbox-custom"></span>
+                        Posts about me, my story, my goals, my experiences within the tech etc
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="content"
+                        class="content-input"
+                        value="topic-month">
+                        <span class="checkbox-custom"></span>
+                        Posts about a monthly topic
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="content"
+                        class="content-input"
+                        value="learn-together">
+                        <span class="checkbox-custom"></span>
+                        Posts were we all learn something new together
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="content"
+                        class="content-input"
+                        value="code-with-me">
+                        <span class="checkbox-custom"></span>
+                        Code with me
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="content"
+                        class="content-input"
+                        value="review">
+                        <span class="checkbox-custom"></span>
+                        Reviews on tools, resources, services, tech equipment
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="content"
+                        class="content-input"
+                        value="thoughts">
+                        <span class="checkbox-custom"></span>
+                        Thoughts on tech industry, phenomenons, work etc
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="content"
+                        class="content-input"
+                        value="adhd">
+                        <span class="checkbox-custom"></span>
+                        Posts about how it's like to be a programmer with ADHD
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="content"
+                        class="content-input"
+                        value="work-photos">
+                        <span class="checkbox-custom"></span>
+                        Work related photos or clips
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="content"
+                        class="content-input"
+                        value="daily-life">
+                        <span class="checkbox-custom"></span>
+                        Daily life updates
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="content"
+                        class="content-input"
+                        value="wip">
+                        <span class="checkbox-custom"></span>
+                        Work In Progress
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="content"
+                        class="content-input"
+                        value="build-tech">
+                        <span class="checkbox-custom"></span>
+                        Posts about mechanical technology, like keyboards and Arduinos!
+                </label>
+                <label class="label__other-input">
+                    <input
+                        type="checkbox"
+                        name="content"
+                        class="content-input"
+                        value="other">
+                        <span class="checkbox-custom"></span>
+                        Other - Please write your ideas in the comments and suggestions below
+                </label>
+            </div>
+
+            <div class="form__group">
+                <label class="label-other">
+                    <span class="other">
+                        <p class="form__group--label">
+                            Any other comments or suggestions?
+                        </p>
+                    </span>
+                    <textarea name="comments"
+                        class="comment-input other-input"
+                        id="comments"
+                        placeholder="Your comments and suggestions"></textarea>
+                </label>
+            </div>
+
+            <button type="submit" id="submit" class="btn">
+                <a href="#" class="btn__text">
+                    Submit
+                </a>
+            </button>
+
+        </form>
+        <!--FORM ENDS HERE-->
+    </div>
+</body>
+</html>
