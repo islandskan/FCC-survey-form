@@ -115,6 +115,7 @@ p.form__group--label {
 select.form-control {
   margin-bottom: 0.8rem;
   color: var(--dark-green);
+  height: 6vh;
 }
 
 select.form-control option {
