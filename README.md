@@ -5,4 +5,4 @@ My "Survey Form" project to freeCodeCamp's "Responsive Web Design"- certificatio
 <br />
 ---
 <br />
-[freeCodeCamp's challenge](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
+[fcc challenge](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
