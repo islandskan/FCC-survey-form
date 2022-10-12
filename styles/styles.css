@@ -1,63 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Fredoka+One&display=swap");
-/*font-family: 'Barlow', sans-serif;
-font-family: 'Fredoka One', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fredoka+One&display=swap');
 
 :root {
-  --light-green: #99c1b9;
-  --grass-green: #a3a045;
-  --dark-green: #2e2f2f;
-  --blue: #7678ed;
-  --fairy-purple: #7d759f;
-  --dark-fairy: #4d4867;
-  --orange-bright: #fe7734;
-  --orange-mute: #99654bb6;
+    --light-green: #99c1b9;
+    --grass-green: #a3a045;
+    --dark-green: #2e2f2f;
+    --blue: #7678ed;
+    --fairy-purple: #7d759f;
+    --dark-fairy: #4d4867;
+    --orange-bright: #fe7734;
+    --orange-mute: #99654bb6;
 }
 
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-size: 1rem;
-  font-style: normal;
-  background-color: var(--fairy-purple);
-  margin: auto;
-  color: honeydew;
-  width: 100%;
+    font-size: 1rem;
+    background-color: var(--fairy-purple);
+    margin: auto;
+    color: honeydew;
+    width: 100%;
+    padding: 20px 2em 3em 2em;
 }
 
 .container {
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 7vh;
-  width: 60%;
+    margin: auto;
+    max-width: 700px;
 }
 
 .header {
-  text-align: center;
-  margin: 5vh auto 4vh auto;
-  max-width: 500px;
-  width: 100%;
-  padding: 0.8rem;
+    text-align: center;
+    margin: 5vh auto 4vh auto;
+    padding: 0.8rem;
 }
 
 h1 {
-  font-family: "Fredoka One", cursive;
-  font-weight: 400;
-  font-size: 3rem;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  letter-spacing: 2.5;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
 }
 
 #description {
-  line-height: 1.2;
-  font-size: 1.25rem;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
 }
 
 p,
@@ -66,10 +59,10 @@ input,
 select,
 a,
 textarea {
-  font-family: "Barlow", sans-serif;
-  font-size: 1.3rem;
-  text-decoration: none;
-  display: block;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none;
+    display: block;
 }
 
 #name-label::before,
@@ -77,307 +70,158 @@ textarea {
 #number-label::before,
 .content-label::before,
 .star::before {
-  content: "*";
-  color: var(--orange-bright);
-  margin-right: 0.4rem;
+    content: '*';
+    color: var(--orange-bright);
+    margin-right: 0.4rem;
 }
 
 .form {
-  background-color: var(--dark-fairy);
-  border-radius: 2.5rem;
-  padding: 2.5rem 1.5rem;
+    background-color: var(--dark-fairy);
+    border-radius: 2.5rem;
+    padding: 2.5rem 1.5rem;
 }
 
 .form__group {
-  margin: 0 auto 1.5rem auto;
-  padding: 0.5rem 1rem 1rem 1rem;
-  background: var(--dark-fairy);
-  filter: brightness(150%);
-  border-radius: 0.6rem;
+    margin: 0 auto 1.5rem auto;
+    padding: 0.5rem 1rem 1rem 1rem;
+    background: var(--dark-fairy);
+    filter: brightness(150%);
+    border-radius: 0.6rem;
 }
 
 label,
 .form__group--label,
 p.form__group--label {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
 }
 
 .form__group--label,
 p.form__group--label {
-  font-weight: 500;
-  font-size: 1.5;
-  margin-top: 1.3rem;
-  margin-bottom: 1rem;
-  letter-spacing: 1.3px;
+    font-weight: 500;
+    font-size: 1.5;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1.3px;
 }
 
 select.form-control {
-  margin-bottom: 0.8rem;
-  color: var(--dark-green);
-  height: 6vh;
+    margin-bottom: 0.8rem;
+    color: var(--dark-green);
+    height: 6vh;
 }
 
 select.form-control option {
-  color: var(--dark-green);
+    color: var(--dark-green);
 }
 
 .other p {
-  margin-bottom: 0.5rem;
-  margin-top: 1.3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.3rem;
 }
 
 .label-other {
-  margin-top: 1rem;
-  width: 100%;
+    margin-top: 1rem;
+    width: 100%;
 }
 
 .label-education {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 label:not(.label-other, .label-education) {
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-  cursor: pointer;
-  position: relative;
-  margin: 0.5rem 1.3rem auto 0;
-  padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    margin: 0.5rem 1.3rem auto 0;
+    padding: 0.5rem;
 }
 
-input[type="radio"] {
-  visibility: hidden;
+input[type='radio'] {
+    visibility: hidden;
 }
 
-input[type="radio"],
+input[type='radio'],
 .radio-custom {
-  margin-right: 1.7rem;
-  border-radius: 50%;
+    margin-right: 1.7rem;
+    border-radius: 50%;
 }
 
 .radio-custom {
-  position: absolute;
-  height: 2rem;
-  width: 2rem;
-  background-color: transparent;
-  border: none;
-  outline: honeydew solid 0.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 200ms ease;
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: none;
+    outline: honeydew solid 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms ease;
 }
 
 .radio-custom::after {
-  content: "\f00c";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 700;
-  font-size: 1.2rem;
-  position: absolute;
-  visibility: hidden;
-  border: none;
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    font-size: 1.2rem;
+    position: absolute;
+    visibility: hidden;
+    border: none;
 }
 
-label input[type="radio"]:checked ~ .radio-custom::after {
-  visibility: visible;
-  color: honeydew;
-  border-radius: 50%;
-  background-color: var(--orange-bright);
-  height: 2rem;
-  width: 2rem;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+label input[type='radio']:checked ~ .radio-custom::after {
+    visibility: visible;
+    color: honeydew;
+    border-radius: 50%;
+    background-color: var(--orange-bright);
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-input[type="checkbox"] {
-  visibility: hidden;
+input[type='checkbox'] {
+    visibility: hidden;
 }
 
-input[type="checkbox"],
+input[type='checkbox'],
 .checkbox-custom {
-  margin-right: 1.7rem;
-  border-radius: 0.2rem;
-  /* margin: auto 1rem auto 0; */
+    margin-right: 1.7rem;
+    border-radius: 0.2rem;
+    /* margin: auto 1rem auto 0; */
 }
 
 .checkbox-custom {
-  position: absolute;
-  height: 2rem;
-  width: 2rem;
-  background-color: transparent;
-  border: none;
-  outline: honeydew solid 0.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 200ms ease;
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: none;
+    outline: honeydew solid 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms ease;
 }
 
 .checkbox-custom::after {
-  content: "\f00c";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 700;
-  font-size: 1.2rem;
-  position: absolute;
-  visibility: hidden;
-  border: none;
-}
-
-label input[type="checkbox"]:checked ~ .checkbox-custom::after {
-  visibility: visible;
-  color: honeydew;
-  border-radius: 0.2rem;
-  background-color: var(--orange-bright);
-  height: 2rem;
-  width: 2rem;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-select,
-option {
-  height: 5.5vh;
-  width: 100%;
-  padding: 0.4rem 0.2rem 0.4rem 0.4rem;
-}
-
-::placeholder,
-option {
-  color: var(--dark-green);
-  margin: 0.02rem;
-}
-
-textarea.comment-input {
-  height: 20vh;
-  width: 100%;
-  resize: none;
-  background-color: var(--fairy-purple);
-  border: none;
-  border-radius: 0.2rem;
-  padding: 0.4rem 0.2rem 0.4rem 0.4rem;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-select,
-option,
-textarea {
-  background-color: var(--fairy-purple);
-  border: none;
-  border-radius: 0.2rem;
-  transition: all 200ms ease;
-}
-
-input[type="text"]:hover,
-input[type="email"]:hover,
-input[type="number"]:hover,
-select:hover,
-textarea:hover {
-  filter: brightness(110%);
-}
-
-input[type="text"]:focus,
-input[type="text"]:active,
-input[type="email"]:focus,
-input[type="email"]:active,
-input[type="number"]:focus,
-input[type="number"]:active,
-select:focus,
-select:active,
-textarea:focus,
-textarea:active {
-  outline: var(--orange-mute) solid 0.3rem;
-  outline-offset: 0rem;
-  filter: brightness(115%);
-}
-
-.btn {
-  border: none;
-  background-color: var(--orange-mute);
-  border-radius: 0.25rem;
-  display: block;
-  width: 100%;
-  padding: 1.2rem;
-  cursor: pointer;
-  transition: all 200ms ease;
-  outline: honeydew solid 0.2rem;
-  outline-offset: -0.2rem;
-  opacity: 0.9;
-}
-
-.btn__text {
-  color: honeydew;
-  font-weight: 600;
-  line-height: 1.6;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
-}
-
-.btn:hover,
-.btn:focus,
-.btn:active {
-  background-color: var(--orange-bright);
-  filter: brightness(100%);
-  color: honeydew;
-  outline: honeydew solid 0.4rem;
-  outline-offset: 0rem;
-}
-
-/*MEDIA QUERIES*/
-@media screen and (max-width: 1200px) {
-  h1 {
-    font-weight: 400;
-    font-size: 2.8rem;
-  }
-
-  #description,
-  .description-para {
-    line-height: 1.2;
-    font-size: 1rem;
-  }
-
-  .form__group--label,
-  p.form__group--label {
-    font-weight: 500;
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
     font-size: 1.2rem;
-    margin-top: 1.3rem;
-    margin-bottom: 1rem;
-    letter-spacing: 1.2px;
-  }
-  p,
-  label,
-  input,
-  select,
-  a,
-  textarea {
-    font-size: 1.2rem;
-    display: block;
-    text-decoration: none;
-  }
+    position: absolute;
+    visibility: hidden;
+    border: none;
+}
 
-  .radio-custom::after {
-    content: "\f00c";
-    font-size: 1rem;
-  }
-
-  .checkbox-custom::after {
-    content: "\f00c";
-    font-size: 1rem;
-  }
-
-  label input[type="checkbox"]:checked ~ .checkbox-custom::after {
+label input[type='checkbox']:checked ~ .checkbox-custom::after {
     visibility: visible;
     color: honeydew;
     border-radius: 0.2rem;
@@ -388,158 +232,306 @@ textarea:active {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+select,
+option {
+    height: 5.5vh;
+    width: 100%;
+    padding: 0.4rem 0.2rem 0.4rem 0.4rem;
+}
+
+::placeholder,
+option {
+    color: var(--dark-green);
+    margin: 0.02rem;
+}
+
+textarea.comment-input {
+    height: 20vh;
+    width: 100%;
+    resize: none;
+    background-color: var(--fairy-purple);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.4rem 0.2rem 0.4rem 0.4rem;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+select,
+option,
+textarea {
+    background-color: var(--fairy-purple);
+    border: none;
+    border-radius: 0.2rem;
+    transition: all 200ms ease;
+}
+
+input[type='text']:hover,
+input[type='email']:hover,
+input[type='number']:hover,
+select:hover,
+textarea:hover {
+    filter: brightness(110%);
+}
+
+input[type='text']:focus,
+input[type='text']:active,
+input[type='email']:focus,
+input[type='email']:active,
+input[type='number']:focus,
+input[type='number']:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active {
+    outline: var(--orange-mute) solid 0.3rem;
+    outline-offset: 0rem;
+    filter: brightness(115%);
+}
+
+.btn {
+    border: none;
+    background-color: var(--orange-mute);
+    border-radius: 0.25rem;
+    display: block;
+    width: 100%;
+    padding: 1.2rem;
+    cursor: pointer;
+    transition: all 200ms ease;
+    outline: honeydew solid 0.2rem;
+    outline-offset: -0.2rem;
+    opacity: 0.9;
+}
+
+.btn__text {
+    color: honeydew;
+    font-weight: 600;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    background-color: var(--orange-bright);
+    filter: brightness(100%);
+    color: honeydew;
+    outline: honeydew solid 0.4rem;
+    outline-offset: 0rem;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-weight: 400;
+        font-size: 2.8rem;
+    }
+
+    #description,
+    .description-para {
+        line-height: 1.4;
+        font-size: 1rem;
+    }
+
+    .form__group--label,
+    p.form__group--label {
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin-top: 1.3rem;
+        margin-bottom: 1rem;
+        letter-spacing: 1.2px;
+    }
+    p,
+    label,
+    input,
+    select,
+    a,
+    textarea {
+        font-size: 1.2rem;
+        display: block;
+        text-decoration: none;
+    }
+
+    .radio-custom::after {
+        content: '\f00c';
+        font-size: 1rem;
+    }
+
+    .checkbox-custom::after {
+        content: '\f00c';
+        font-size: 1rem;
+    }
+
+    label input[type='checkbox']:checked ~ .checkbox-custom::after {
+        visibility: visible;
+        color: honeydew;
+        border-radius: 0.2rem;
+        background-color: var(--orange-bright);
+        height: 2rem;
+        width: 2rem;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 1024px) {
-  h1 {
-    font-weight: 400;
-    font-size: 1.9rem;
-  }
+    h1 {
+        font-weight: 400;
+        font-size: 1.9rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .header {
-    width: 80%;
-  }
+    .header {
+        width: 80%;
+    }
 
-  p,
-  label,
-  input,
-  select,
-  a,
-  textarea {
-    font-size: 1rem;
-  }
+    p,
+    label,
+    input,
+    select,
+    a,
+    textarea {
+        font-size: 1rem;
+    }
 
-  ::placeholder {
-    font-size: 1rem;
-  }
+    ::placeholder {
+        font-size: 1rem;
+    }
 
-  .radio-custom {
-    height: 1.8rem;
-    width: 1.8rem;
-    outline: honeydew solid 0.18rem;
-  }
+    .radio-custom {
+        height: 1.8rem;
+        width: 1.8rem;
+        outline: honeydew solid 0.18rem;
+    }
 
-  .radio-custom::after {
-    font-size: 1rem;
-  }
+    .radio-custom::after {
+        font-size: 1rem;
+    }
 
-  label input[type="radio"]:checked ~ .radio-custom::after {
-    height: 1.8rem;
-    width: 1.8rem;
-  }
+    label input[type='radio']:checked ~ .radio-custom::after {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
 
-  .checkbox-custom {
-    height: 1.8rem;
-    width: 1.8rem;
-    outline: honeydew solid 0.18rem;
-  }
+    .checkbox-custom {
+        height: 1.8rem;
+        width: 1.8rem;
+        outline: honeydew solid 0.18rem;
+    }
 
-  .checkbox-custom::after {
-    font-size: 1rem;
-  }
+    .checkbox-custom::after {
+        font-size: 1rem;
+    }
 
-  label input[type="checkbox"]:checked ~ .checkbox-custom::after {
-    height: 1.8rem;
-    width: 1.8rem;
-  }
+    label input[type='checkbox']:checked ~ .checkbox-custom::after {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
 }
 
 @media screen and (max-width: 425px) {
-  .container {
-    margin-bottom: 6vh;
-    width: 80%;
-  }
+    .container {
+        margin-bottom: 6vh;
+        width: 80%;
+    }
 
-  .header {
-    width: 100%;
-    margin: 5vh auto 3vh auto;
-    padding: 0.5rem 0 0.2rem 0;
-  }
+    .header {
+        width: 100%;
+        margin: 5vh auto 3vh auto;
+        padding: 0.5rem 0 0.2rem 0;
+    }
 
-  h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.8rem;
-  }
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0.8rem;
+    }
 
-  #description,
-  .description-para {
-    line-height: 1.2;
-    font-size: 1rem;
-  }
+    #description,
+    .description-para {
+        line-height: 1.2;
+    }
 
-  p,
-  label,
-  input,
-  select,
-  a,
-  textarea {
-    font-size: 1rem;
-  }
+    p,
+    label,
+    input,
+    select,
+    a,
+    textarea {
+        font-size: 1rem;
+    }
 
-  label,
-  .form__group--label,
-  p.form__group--label {
-    font-weight: 400;
-    font-size: 1.1rem;
-  }
+    label,
+    .form__group--label,
+    p.form__group--label {
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
 
-  select.form-control {
-    margin-bottom: 0.8rem;
-    font-size: 1rem;
-  }
+    select.form-control {
+        margin-bottom: 0.8rem;
+        font-size: 1rem;
+    }
 
-  .label-other {
-    margin-top: 1rem;
-    width: 100%;
-  }
+    .label-other {
+        margin-top: 1rem;
+        width: 100%;
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 424px) {
-  .container {
-    margin-bottom: 2vh;
-    margin-top: 0;
-    width: 85%;
-  }
+    .container {
+        margin-bottom: 2vh;
+        margin-top: 0;
+        width: 85%;
+    }
 
-  h1 {
-    font-size: 1.8rem;
-  }
+    h1 {
+        font-size: 1.8rem;
+    }
 
-  #description,
-  .description-para {
-    line-height: 1.4;
-    font-size: 0.75rem;
-  }
+    #description,
+    .description-para {
+        line-height: 1.4;
+        font-size: 0.75rem;
+    }
 
-  label,
-  input,
-  select,
-  a,
-  textarea {
-    font-size: 0.8rem;
-    font-weight: 300;
-  }
+    label,
+    input,
+    select,
+    a,
+    textarea {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
 
-  label,
-  .form__group--label,
-  p.form__group--label {
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-  }
+    label,
+    .form__group--label,
+    p.form__group--label {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
 
-  select.form-control {
-    margin-bottom: 0.8rem;
-    font-size: 0.85rem;
-  }
+    select.form-control {
+        margin-bottom: 0.8rem;
+        font-size: 0.85rem;
+    }
 
-  .label-other {
-    font-size: 0.8rem;
-  }
+    .label-other {
+        font-size: 0.8rem;
+    }
 
-  input[type="text"].other-input,
-  #comments {
-    font-size: 0.8rem;
-  }
+    input[type='text'].other-input,
+    #comments {
+        font-size: 0.8rem;
+    }
 }
